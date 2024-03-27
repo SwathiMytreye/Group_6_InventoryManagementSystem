@@ -1,45 +1,70 @@
-Group 6: Inventory Management System
-Employee & Customers
-This project implements a backend connection for the Employee and Customer tables, as well 
-as endpoints for the User resource. The endpoints are implemented using Spring Boot and 
-provide CRUD operations for the User entity.
-Endpoints
-The following endpoints are available for the User resource:
-1. Add User (POST):
-2. Endpoint: /api/v1/users
-3. Request body: JSON representation of a user
-4. Example:
-{‘Employee_id’ = “123”, ‘first_name’= “Arun”, ‘last_name’=”Kumar”, 
-‘phone_number’=98xxxxxx, ‘adress’= “xxxx M2 Building, Banagalore”, contact_number’= 
-98xxxxxxxx, ‘position’=”Manager”}
-1. Get User Details (GET):
-2. Endpoint: /api/v1/users/{id}
-3. Example: /api/v1/users/1
-4. Update User (PUT):
-5. Endpoint: /api/v1/users/{id}
-6. Example: /api/v1/users/1
-7. Request body: Updated user details
-8. Delete User (DELETE):
-9. Endpoint: /api/v1/users/{id}
-10. Example: /api/v1/users/1
-Logging
-Logging is done to keep track of all the events happening in the backend. The logs are 
-implemented using SLF4J and Logback.
-JwtFilter
-JwtFilter provides authentication for the login system. It uses the jjwt library to create and 
-verify JWT tokens.
-Swagger/OpenAPI
-Swagger/OpenAPI is used for documentation of the API. The endpoints are documented 
-using annotations and the Swagger UI provides an interactive interface for testing the API.
-Running the Application
-To run the application, first clone the repository:
-git clone https://github.com/username/project.git
-Then, navigate to the project directory and run the following command:
-mvn spring-boot:run
-The application will start up and you can access the endpoints using a tool such as Postman. 
-You can also access the Swagger UI by navigating to http://localhost:8080/swaggerui/index.html in your web browser.
-Conclusion
-This project provides a backend connection for the Employee and Customer tables, as well as 
-endpoints for the User resource. It also provides logging, authentication using JWT, and 
-documentation using Swagger/OpenAPI. Feel free to customize the endpoints and 
-functionality based on your needs.
+# Getting Started with Create React App
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## Available Scripts
+
+In the project directory, you can run:
+
+### `npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+### `npm test`
+
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+### `npm run build`
+
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
+
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
+
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
